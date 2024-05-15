@@ -12,7 +12,8 @@ mongoose.connection.on('error', (err) => {
 
 // READY?! Let's go!
 //import all of our models
-require('./models/Data.js');
+require('./models/Volunteer.js');
+require('./models/Produce.js');
 require('./models/User.js');
 
 
