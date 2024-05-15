@@ -1,0 +1,90 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='https://getbootstrap.com/docs/5.3/assets/css/docs.css', rel='stylesheet')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='icon', type='image/x-icon', href='/images/favicon.ico')
+    title FoodChain LA
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js')
+  body.p-3.m-0.border-0.bd-example
+
+    nav.navbar.navbar-expand-lg.bg-body-tertiary
+      .container-fluid
+        a.navbar-brand(href='#') Food Chain LA
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link(href="/home") Home
+            li.nav-item
+              a.nav-link(href="/about") About
+            li.nav-item
+              a.nav-link(href='/volunteer') Volunteer
+            li.nav-item
+              a.nav-link(href='/contact') Photos
+            if user
+                li.nav-item
+                  a.nav-link(href='/volunteerInfo') Volunteers
+                li.nav-item
+                  a.nav-link(href='/produceInfo') Produce
+                            a.icon-link(href='#')
+                                svg.bi(aria-hidden='true')
+                                    use(xlink:href='#box-seam')
+
+
+        nav.bg-body-tertiary.justify-content-end
+      form.container-fluid.justify-content-end
+        if user
+            a.button-btn(href='/logout') Logout 
+        else
+            a.button-btn(href='/login') Login
+
+    .banner
+      img.food(src="/images/mcfarlin pic.JPG")
+      .text-block
+        a.button.btn(href='/volunteer') 
+            | FOOD CHAIN LA
+            br
+            | help feed your community!
+            br
+            | VOLUNTEER HERE
+            
+            
+        
+
+    p.save we have saved over
+        p.num= totalAmount 
+        p.produce of unused produce 
+        br
+        br
+      
+      
+        p.boldgreen40 OUR MISSION
+        p.missionStatement Food Chain L.A.'s mission is to combat food insecurity and food waste in the local community by encouraging students to rescue excess produce, baked goods, and more from farmers' markets and local businesses. These goods are collected for distribution to food pantries, senior centers, youth centers, churches, and other volunteer-based organizations. We strive to empower students to make a meaningful impact through connecting with their peers and their immediate community.
+        p.boldgreen40 WHAT WE'VE ACCOMPLISHED
+        p.acomplishments We have had over 45 volunteers from 6 different schools in the LA area work with us to collect produce from vendors at more than 6 different local farmers markets, along with several bakeries around the city. Our volunteers attend the farmers markets weekly to pick up fresh produce from vendors and donate it to different homeless shelters and distribution centers. In the process, we have formed strong friendships with vendors by seeing them every week and working together to help our community. Check out the places we collect food from on our ABOUT page, and check out volunteering photos on our VOLUNTEER page!
+        p.boldgreen40 WHY FOOD CHAIN?
+        p.acomplishments At Food Chain L.A., we obtain food from smaller businesses like local bakeries, and restaurants as well as farmers markets, which are places that big food-rescuing corporations tend to ignore. We save the food that would otherwise be thrown away, and we focus on distribution to small places that need food such as local distribution centers homeless shelters, and community centers. We make sure that the food we rescue is going out to families who rely on organizations other than food banks, especially during the pandemic. Since COVID-19, many food banks and distribution centers, such as the LA Food Bank and YMCA have stopped taking teen volunteers. At Food Chain LA, we focus on getting students involved from our local communities in order to combat this issue. 
+
+    .homeimages
+        .himg
+            img(src="/images/indra.jpeg")
+        .himg
+            img(src="/images/anna.jpeg")
+        .himg
+            img(src="/images/hannahash.jpeg")
+        .himg
+            img(src="/images/mel.jpeg")
+        .himg
+            img(src="/images/natiryker.jpeg")
+        .himg
+            img(src="/images/sandtatwater.jpg")
+
+    block content
+        
+ 
+            

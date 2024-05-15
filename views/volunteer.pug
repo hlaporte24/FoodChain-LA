@@ -1,0 +1,77 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='https://getbootstrap.com/docs/5.3/assets/css/docs.css', rel='stylesheet')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='icon', type='image/x-icon', href='/images/favicon.ico')
+    title FoodChain LA
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js')
+  body.p-3.m-0.border-0.bd-example
+
+    nav.navbar.navbar-expand-lg.bg-body-tertiary
+      .container-fluid
+        a.navbar-brand(href='#') FoodChain LA
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link(href="/home") Home
+            li.nav-item
+              a.nav-link(href="/about") About
+            li.nav-item
+              a.nav-link(href='/volunteer') Volunteer
+            li.nav-item
+              a.nav-link(href='/contact') Photos
+            if user
+                li.nav-item
+                  a.nav-link(href='/volunteerInfo') Volunteers
+                li.nav-item
+                  a.nav-link(href='/produceInfo') Produce
+                            a.icon-link(href='#')
+                                svg.bi(aria-hidden='true')
+                                    use(xlink:href='#box-seam')
+
+
+        nav.bg-body-tertiary.justify-content-end
+      form.container-fluid.justify-content-end
+        if user
+            a.button-btn(href='/logout') Logout 
+        else
+            a.button-btn(href='/login') Login
+br
+br
+p.boldgreen40 how to volunteer
+
+p If you are a teen looking to volunteer in with Food Chain L.A. in the Pasadena/LA area... 
+br 
+| 1. Send an email to foodchainla@gmail.com OR DM @foodchainla on Instagram
+br 
+| 2. Work out a volunteering schedule and find out about volunteer opportunities.
+br
+
+|**Most volunteering requires driving.
+
+br
+br
+br
+
+
+
+p.volunteerImages volunteering pics!
+ .homeimages
+        .himg
+            img(src="/images/sep15.jpeg")
+        .himg
+            img(src="/images/sep152.jpeg")
+        .himg
+            img(src="/images/sep153.jpeg")
+        .himg
+            img(src="/images/sep154.jpeg")
+        .himg
+            img(src="/images/sep155.jpeg")
+        .himg
+            img(src="/images/sep156.jpeg")

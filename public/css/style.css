@@ -1,0 +1,439 @@
+
+body {
+  margin: auto 0;
+  text-align: center;
+}
+
+h1 {
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.food {
+    width: 500vw;
+    height: 600px;
+    object-fit:cover;
+}
+.banner {
+  position: relative; /* Set the banner container to relative positioning */
+  width: 97vw;
+  height: 500px;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text-block {
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center the text within the block */
+}
+
+.text-block .btn {
+  background-color: white;
+  color: black;
+  font-kerning: none;
+  font-size: 19px;
+  /*font-weight:bold;*/
+  padding: 30px 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  line-height: 3;
+}
+
+.text-block .btn : hover{
+    background-color:darkolivegreen;
+}
+
+
+
+.save {
+    padding-top:150px;
+    font-size: 20px;
+}
+.num {
+    font-size:75px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.title{
+    font-size:90px;
+}
+.produce{
+    font-size:20px;
+}
+.boldgreen40{
+    color:green;
+    font-size:40px;
+    font-weight: bold;
+}
+.missionStatement{
+    font-size:20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+.acomplishments{
+    font-size:20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+.storyTitle {
+    font-size:50px;
+    text-align: left;
+    font-weight: bold;
+    color:green;
+}
+
+.picTitle {
+    font-size:50px;
+    text-align: middle;
+    font-weight: bold;
+    color:green;
+    margin-top:10px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.story {
+    font-size: 15px;
+    text-align: left;
+    font-kerning:none;
+
+}
+.ourFood {
+    padding-top: 30px;
+    font-size:50px;
+    color:green;
+    font-kerning:none;
+    font-weight:bold;
+    text-align: left;
+}
+.marketName {
+    padding-top:20px;
+    font-size:20px;
+    color: darkgreen;
+    font-kerning: none;
+    text-align: left;
+}
+.marketInfo {
+    font-size:15px;
+    font-kerning:none;
+    text-align: left;
+}
+.marketTime {
+    font-size: 15px;
+    font-kerning:none;
+    text-align: left;
+}
+.marketAddress {
+    font-size: 15px;
+    font-kerning:none;
+    text-align: left;
+}
+.website {
+    color:darkblue;
+    font-size:15px;
+    text-align: left;
+}
+
+/* Basic styles for the link */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #003366; /* A shade of blue as the background color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover styles */
+.button-link:hover {
+  background-color: #007bff; /* A slightly darker shade of blue on hover */
+}
+
+.contact{
+    padding-top:30px;
+    font-size: 75px;
+} 
+.volunteerName {
+    margin-top: 50px;
+    margin-right: 25px;
+}
+.submit {
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.name {
+    font-size: 10px;
+}
+.spreadsheetTitle {
+    margin-top: 30px;
+    
+}
+.spreadsheetInstruct {
+    margin-top:20px;   
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #fff; /* white background */
+  color: #000; /* black text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding for a slightly rounded appearance */
+  border-radius: 5px; /* Make it slightly rounded */
+  font-size: 16px; /* Adjust the font size */
+  cursor: pointer;/* Add a pointer cursor on hover */
+  margin-right:10px;
+}
+
+/* Style the submit button on hover for a classy effect */
+input[type="submit"]:hover {
+  background-color: #000; /* black background on hover */
+  color: #fff; /* white text color on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+/* Style the anchor link with the class "btn" */
+a.btn {
+  text-decoration: none; /* Remove underline */
+  background-color: #fff; /* white background */
+  color: #000; /* black text color */
+  padding: 10px 20px; /* Add padding for a slightly rounded appearance */
+  border-radius: 5px; /* Make it slightly rounded */
+  font-size: 16px; /* Adjust the font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+/* Style the anchor link with the class "btn" on hover for a classy effect */
+a.btn:hover {
+  background-color: #000; /* black background on hover */
+  color: #fff; /* white text color on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.label {
+    margin-right:10px;
+}
+
+.login {
+    font-size:30px; }
+/* Styles for the login container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for the login form */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+/* Styles for the "Login" paragraph */
+.login-container form p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styles for the login form inputs */
+.login-container form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.login-container form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+/* Styles for the submit button */
+.login-container form input.button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-container form input.button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.contactEmail {
+ padding-left: 25px;
+}
+.name {
+    text-align: left;
+    font-size:25px;
+    color: black;
+}
+.descript {
+    font-size:15px;
+    text-align: left;
+    color: black;
+}
+.back{
+    text-align: right;
+}
+
+.btn {
+  background-color: #FFFF; /* Green */
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.homeimages{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    padding: 30px;
+}
+
+.himg{
+    max-width: 31.333%;
+    padding: 0 40px;
+    height: 500px;   
+}
+  
+.himg img {
+    width: 300px;
+    height: 400px;
+}
+.volunteerImages {
+    color:green;
+    font-size:25px;  
+}
+
+
+
+
+
+$navbar-padding-y:                  $spacer * .5;
+$navbar-padding-x:                  null;
+
+$navbar-nav-link-padding-x:         .5rem;
+
+$navbar-brand-font-size:            $font-size-lg;
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2;
+$navbar-brand-height:               $navbar-brand-font-size * $line-height-base;
+$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) * .5;
+$navbar-brand-margin-end:           1rem;
+
+$navbar-toggler-padding-y:          .25rem;
+$navbar-toggler-padding-x:          .75rem;
+$navbar-toggler-font-size:          $font-size-lg;
+$navbar-toggler-border-radius:      $btn-border-radius;
+$navbar-toggler-focus-width:        $btn-focus-width;
+$navbar-toggler-transition:         box-shadow .15s ease-in-out;
+
+$navbar-light-color:                rgba(var(--#{$prefix}emphasis-color-rgb), .65);
+$navbar-light-hover-color:          rgba(var(--#{$prefix}emphasis-color-rgb), .8);
+$navbar-light-active-color:         rgba(var(--#{$prefix}emphasis-color-rgb), 1);
+$navbar-light-disabled-color:       rgba(var(--#{$prefix}emphasis-color-rgb), .3);
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{rgba($body-color, .75)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: rgba(var(--#{$prefix}emphasis-color-rgb), .15);
+$navbar-light-brand-color:          $navbar-light-active-color;
+$navbar-light-brand-hover-color:    $navbar-light-active-color;
+
+
+/* Global styles */
+/*body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}*/
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation styles */
+nav.navbar {
+  background-color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #000; /* Change the navbar-brand text color to black */
+}
+
+.nav-link {
+  margin-right: 10px;
+  color: #000; /* Change the text color of all navigation links to black */
+}
+
+/* Centering the text on the navbar */
+ul.navbar-nav {
+  text-align: center;
+}
+
+/* Toggler styles */
+button.navbar-toggler {
+  background-color: #fff;
+}
+
+span.navbar-toggler-icon {
+  background-color: #000;
+}
+
+/* Login/Logout button styles */
+a.button-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #1b6d1b;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+a.button-btn:hover {
+  background-color:#0e4f0e ;
+}
+

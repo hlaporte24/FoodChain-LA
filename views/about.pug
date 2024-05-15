@@ -1,0 +1,107 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='https://getbootstrap.com/docs/5.3/assets/css/docs.css', rel='stylesheet')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='icon', type='image/x-icon', href='/images/favicon.ico')
+    title FoodChain LA
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js')
+  body.p-3.m-0.border-0.bd-example
+
+    nav.navbar.navbar-expand-lg.bg-body-tertiary
+      .container-fluid
+        a.navbar-brand(href='#') FoodChain LA
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link(href="/home") Home
+            li.nav-item
+              a.nav-link(href="/about") About
+            li.nav-item
+              a.nav-link(href='/volunteer') Volunteer
+            li.nav-item
+              a.nav-link(href='/contact') Photos
+            if user
+                li.nav-item
+                  a.nav-link(href='/volunteerInfo') Volunteers
+                li.nav-item
+                  a.nav-link(href='/produceInfo') Produce
+                            a.icon-link(href='#')
+                                svg.bi(aria-hidden='true')
+                                    use(xlink:href='#box-seam')
+
+
+        nav.bg-body-tertiary.justify-content-end
+      form.container-fluid.justify-content-end
+        if user
+            a.button-btn(href='/logout') Logout 
+        else
+            a.button-btn(href='/login') Login
+
+    .homeimages
+        .himg
+            img(src="/images/annaande.jpeg")
+        .himg
+            img(src="/images/mel2.jpeg")
+        .himg
+            img(src="/images/ayalaanna.jpeg")
+
+
+        
+    div.storyTitle the full story
+    br
+    p.story We are three high school students from LA County, California. During the COVID-19 pandemic, we began to see a rise in food insecurity as employment rates and small businesses suffered. At the same time, while members in our community struggled to find sufficient meals, amounts of food waste in LA county rapidly increased. We wondered: “How can so much food be wasted when so many people are going hungry?”
+    p.story One of the biggest problems surrounding food insecurity is food distribution. Here in the U.S., enough food is produced to support every inhabitant of our country; however, many remain food insecure because of inadequate food availability. We believed that there was a way to support smaller food distribution centers who have a hard time securing enough food to feed those who depend on their services.
+    p.story Another problem is the lack of awareness surrounding food insecurity, so we made it part of our mission to involve and educate local high school students about food insecurity in our own city. Food Chain LA emerged as a way to connect high school students to their community through collecting unused food (mainly fresh produce) from local farmers markets and bakeries, and distributing it to small neighborhood organizations. 
+    div.ourFood OUR FOOD SOURCES
+    p.marketName The La Cañada Flintridge Farmers Market:
+    p.marketInfo "Saturday-only farmer's market with many organic goods featuring items from produce to baked goods."
+    p.marketTime Weekly: Every Saturday from 8 am - 1 pm
+    p.marketAddress 1300 Foothill Blvd, La Cañada Flintridge, CA 91011
+    a.button-link(href='https://www.yelp.com/biz/la-ca%C3%B1ada-flintridge-farmers-market-la-canada-flintridge-2') view website
+    p.marketName The Alhambra Farmers Market:
+    p.marketTime Weekly: Every Sunday from 8 am - 1:30 pm
+    p.marketAddress 100 S 2nd St, Alhambra, CA 91801
+    a.button-link(href='https://www.yelp.com/biz/alhambra-farmers-market-alhambra-3') view website
+    p.marketName The Pasadena Villa Park Farmers Market:
+    p.marketInfo "Cash-only weekly farmer's market offering fruits & vegetables, plus gourmet gifts & goodies."
+    p.marketTime Weekly: Every Tuesday from 8:30 am - 12:30 pm
+    p.marketAddress 363 E Villa St, Pasadena, CA 91101
+    a.button-link(href='https://www.pasadenafarmersmarket.org/VillaParke') view website
+    p.marketName The Montrose Farmers Market:
+    p.marketTime Weekly: Every Sunday from 8 am - 1 pm
+    p.marketAddress 2338-2312 Honolulu Ave, Montrose, CA 91020
+    a.button-link(href='https://shopmontrose.com/harvest-market-montrose/') view website
+    p.marketName The Pasadena Victory Park Farmers Market:
+    p.marketInfo "Saturday-only open-air market featuring local vendors selling produce, artisanal foods & flowers."
+    p.marketTime Weekly: Every Saturday from 8 am - 12:30 pm
+    p.marketAddress 2925 E Sierra Madre Blvd, Pasadena, CA 91107
+    a.button-link(href='https://www.pasadenafarmersmarket.org/VictoryPark') view website
+    p.marketName The South Pasadena Farmers Market:
+    p.marketInfo "Year-round open-air market, featuring fruit, vegetables & local vendors."
+    p.marketTime Weekly: Every Thursday from 4 pm - 8:30 pm
+    p.marketAddress 2925 E Sierra Madre Blvd, Pasadena, CA 91107
+    a.button-link(href='https://www.pasadenafarmersmarket.org/VictoryPark') view website
+    
+    br
+    br
+    br
+    br
+    br
+
+    div.storyTitle let's work together
+    p.marketInfo Feel free to contact us through email at foodchainla@gmail.com if you would like to donate food for pickup or if you would like to receive donations. Thank you!
+
+
+
+ 
+
+
+
+ 
+
